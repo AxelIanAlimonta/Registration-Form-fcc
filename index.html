@@ -11,13 +11,14 @@
     <h1 id="title">Formulario de Inscripción</h1>
     <p id="description">"Si puedes imaginarlo puedes programarlo"</p>
     <form action="" id="survey-form">
-      <section>
+      <section id="textInputArea">
         <label for="name" id="name-label">Nombre</label>
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Ingrese su nombre"
+          class="inputTxt"
           required
         />
         <label for="email" id="email-label">Email</label>
@@ -26,6 +27,7 @@
           name="email"
           id="email"
           placeholder="Ingrese su email"
+          class="inputTxt"
           required
         />
         <label for="number" id="number-label">Edad</label>
@@ -35,6 +37,7 @@
           type="number"
           name="edad"
           id="number"
+          class="inputTxt"
           placeholder="Ingrese su nombre de edad"
         />
 
@@ -43,6 +46,7 @@
           type="text"
           name="user"
           id="user"
+          class="inputTxt"
           placeholder="Ingrese su usuario"
         />
         <label for="password">Contraseña</label>
@@ -50,19 +54,41 @@
           type="password"
           name="password"
           id="password"
+          class="inputTxt"
           placeholder="Ingrese su contraseña"
         />
 
         <p>Ingrese su Género</p>
-        <input type="radio" name="genero" id="masculino" class="inline" value="masculino" />
-        <label for="masculino">Masculino</label>
-        <br />
-        <input type="radio" name="genero" id="femenino" class="inline" value="femenino"/>
-        <label for="femenino">femenino</label>
-        <br />
-        <input type="radio" name="genero" id="otro" class="inline" value="otro"/>
-        <label for="otro">otro</label>
-        <br />
+        <div class="contInputRadio">
+          <input
+            type="radio"
+            name="genero"
+            id="masculino"
+            class="inline"
+            value="masculino"
+          />
+          <label for="masculino">Masculino</label>
+        </div>
+        <div class="contInputRadio">
+          <input
+            type="radio"
+            name="genero"
+            id="femenino"
+            class="inline"
+            value="femenino"
+          />
+          <label for="femenino">Femenino</label>
+        </div>
+        <div class="contInputRadio">
+          <input
+            type="radio"
+            name="genero"
+            id="otro"
+            class="inline"
+            value="otro"
+          />
+          <label for="otro">Otro</label>
+        </div>
       </section>
 
       <section>
@@ -76,7 +102,7 @@
       </section>
 
       <section>
-        <p>Que tecnologías te gustaría aprender</p>
+        <p>¿Que tecnologías te gustaría aprender?</p>
 
         <input
           type="checkbox"
@@ -155,7 +181,7 @@
         ></textarea>
       </section>
 
-      <input type="submit" value="Enviar" id="submit"/>
+      <input type="submit" value="Enviar" id="submit" />
     </form>
   </body>
 </html>
